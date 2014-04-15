@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="438dip"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/Word1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ViewFlipper
+                android:id="@+id/flip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/ViewMoodLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ListView
+                            android:id="@+id/list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dip"
+                            android:fadingEdge="vertical"
+                            android:scrollbars="vertical"
+                            android:textSize="5sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <SeekBar
+                            android:id="@+id/seekbar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:max="5"
+                            android:progress="0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/seekBarValues"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/Topic_Label"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="4"
+                            android:text="Set/View Topic"
+                            android:textColor="#000000"
+                            android:textSize="16dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/Topic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="2"
+                            android:gravity="top|left"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:scrollHorizontally="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/setTopic"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="1"
+                            android:onClick="onSet"
+                            android:text="Set Mood/Topic" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SettingsLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/Word_Label"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="4"
+                            android:text="UserName"
+                            android:textColor="#000000"
+                            android:textSize="16dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/userName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="2"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/Description_Label"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_weight="4"
+                            android:text="ServerURL"
+                            android:textColor="#000000"
+                            android:textSize="16dip"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/serverURL"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="2"
+                            android:gravity="top|left"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:scrollHorizontally="false"
+                            android:singleLine="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/save"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_weight="1"
+                            android:onClick="onApply"
+                            android:text="Apply" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ViewFlipper>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/TitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android_gravity="left|vertical_center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/viewMood"
+                style="@style/MenuBar"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="6dip"
+                android:background="@null"
+                android:src="@drawable/home_def" />
+
+            <ImageView
+                android:layout_width="4px"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/separator" />
+
+            <ImageButton
+                android:id="@+id/viewSettings"
+                style="@style/MenuBar"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="6dip"
+                android:background="@null"
+                android:src="@drawable/settings" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
