@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="See Another Word" />
+
+
+            <ViewFlipper
+                android:id="@+id/flip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/Word"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center"
+				    android:onClick="ClickHandler"
+                    android:textSize="30dip"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Word2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:textSize="25dip"
+                    android:textStyle="bold" />
+            </ViewFlipper>
+
+
+</LinearLayout>

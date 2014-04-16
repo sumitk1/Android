@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="" android:id="@+id/text" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Word"
+			android:layout_weight="4" android:textStyle="bold" android:textSize="16dip" />
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/Word"
+			android:layout_weight="2" android:layout_marginBottom="10dip" android:singleLine="true"/>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Description"
+			android:layout_weight="4" android:textStyle="bold" android:textSize="16dip" />
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/Description"
+			android:layout_weight="2" 
+			android:layout_marginBottom="15dip"
+            android:lines="5" android:gravity="top|left" 
+            android:inputType="textMultiLine"
+			android:scrollHorizontally="false"
+            android:singleLine="false"/>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:id="@+id/submit" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Submit"
+			android:onClick="onSubmit" android:layout_weight="1" />
+		<Button android:id="@+id/exit" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Back"
+			android:onClick="onExit" android:layout_weight="1" />
+		<Button android:id="@+id/reset" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Reset"
+			android:onClick="onReset" android:layout_weight="1" />
+	</LinearLayout>
+
+</LinearLayout>
+

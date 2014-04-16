@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Flash Card Activity!</string>
+    <string name="app_name">FlashCard</string>
+    <string name="Word_Label">Word</string>
+	<string name="Description_Label">Description</string>
+	<string name="Button_Save_Label">Save</string>
+	<string name="Button_Cancel_Label">Cancel</string>
+	<string name="Button_Reset_Label">Reset</string>
+	<string name="Button_Edit_Label">Edit</string>
+	<string name="Button_Delete_Label">Delete</string>
+	<string name="Button_Exit_Label">Exit</string>
+	
+</resources>
